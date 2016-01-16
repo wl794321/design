@@ -32,6 +32,9 @@
 		<shiro.version>1.2.4</shiro.version>
 		<activiti.version>5.18.0</activiti.version>
 		<lombok.version>1.16.6</lombok.version>
+		<jetty.version>8.1.15.v20140411</jetty.version>
+		<asm.version>3.3.1</asm.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<!-- 只定义依赖的版本，并不实际依赖 -->
 	<dependencyManagement>
@@ -42,6 +45,11 @@
 				<version>${lombok.version}</version>
 				<scope>provided</scope>
 			</dependency>
+			<dependency>
+            <groupId>asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>${asm.version}</version>
+        </dependency>
 			<!-- 时间操作组件 -->
 			<dependency>
 				<groupId>joda-time</groupId>
@@ -251,6 +259,20 @@
 				<artifactId>activiti-bpmn-converter</artifactId>
 				<version>${activiti.version}</version>
 			</dependency>
+			
+        <!-- jetty -->
+        <dependency>
+            <groupId>org.eclipse.jetty.aggregate</groupId>
+            <artifactId>jetty-webapp</artifactId>
+            <version>${jetty.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-jsp</artifactId>
+            <version>${jetty.version}</version>
+            <scope>test</scope>
+        </dependency>
 		</dependencies>
 	</dependencyManagement>
 	<build>
@@ -279,6 +301,35 @@
 		</plugins>
 		<pluginManagement>
 			<plugins>
+			<!-- jetty插件, 设定context path与spring profile -->
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>${jetty.version}</version>
+                <configuration>
+                    <webApp>
+                        <contextPath>/${project.artifactId}</contextPath>
+                    </webApp>
+                    <stopKey>kad</stopKey>
+                    <stopPort>9999</stopPort>
+                </configuration>
+            </plugin>
+			<!-- resource插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <nonFilteredFileExtensions>
+                        <!-- 过滤流程定义资源文件 -->
+                        <nonFilteredFileExtension>zip</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>bar</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>png</nonFilteredFileExtension>
+                        <nonFilteredFileExtension>bpmn</nonFilteredFileExtension>
+                    </nonFilteredFileExtensions>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
 				<!-- 配置Tomcat插件 -->
 				<plugin>
 					<groupId>org.apache.tomcat.maven</groupId>
