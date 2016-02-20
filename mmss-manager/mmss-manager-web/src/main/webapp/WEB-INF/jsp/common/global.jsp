@@ -7,9 +7,11 @@
 <!-- Bootstrap -->
     <link href="${ctx}/css/bootstrap.min.css" rel="stylesheet">
     <link href="${ctx}/css/font-awesome.min.css" rel="stylesheet">
+    <link href="${ctx}/css/toastr.min.css" rel="stylesheet">
     <script src="${ctx}/js/jquery-2.2.0.min.js"></script>
     <script src="${ctx}/js/bootstrap.min.js"></script>
     <script src="${ctx}/js/validator.js"></script>
+    <script src="${ctx}/js/toastr.min.js"></script>
 <script type="text/javascript">
 	var ctx = '<%=request.getContextPath() %>';
 </script>

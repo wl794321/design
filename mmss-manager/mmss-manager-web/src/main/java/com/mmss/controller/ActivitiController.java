@@ -30,7 +30,7 @@ import com.mmss.service.activiti.WorkflowTraceService;
 @Controller
 @RequestMapping(value="/workflow")
 public class ActivitiController {
-	 protected Logger logger = LoggerFactory.getLogger(getClass());
+	/* protected Logger logger = LoggerFactory.getLogger(getClass());
 	 	@Resource
 	    protected WorkflowProcessDefinitionService workflowProcessDefinitionService;
 	 	@Resource
@@ -62,13 +62,13 @@ public class ActivitiController {
 	
 	        return "redirect:/workflow/process-list";
 	}
-	/**
+	*//**
      * 读取资源，通过部署ID
      *
      * @param processDefinitionId 流程定义
      * @param resourceType        资源类型(xml|image)
      * @throws Exception
-     */
+     *//*
     @RequestMapping(value = "/resource/read")
     public void loadByDeployment(@RequestParam("processDefinitionId") String processDefinitionId, @RequestParam("resourceType") String resourceType,
                                  HttpServletResponse response) throws Exception {
@@ -86,14 +86,14 @@ public class ActivitiController {
             response.getOutputStream().write(b, 0, len);
         }
     }
-    /**
+    *//**
      * 读取资源，通过流程ID
      *
      * @param resourceType      资源类型(xml|image)
      * @param processInstanceId 流程实例ID
      * @param response
      * @throws Exception
-     */
+     *//*
     @RequestMapping(value = "/resource/process-instance")
     public void loadByProcessInstance(@RequestParam("type") String resourceType, @RequestParam("pid") String processInstanceId, HttpServletResponse response)
             throws Exception {
@@ -116,15 +116,15 @@ public class ActivitiController {
         }
     }
 
-    /**
+    *//**
      * 删除部署的流程，级联删除流程实例
      *
      * @param deploymentId 流程部署ID
-     */
+     *//*
     @RequestMapping(value = "/process/delete")
     public String delete(@RequestParam("deploymentId") String deploymentId) {
         repositoryService.deleteDeployment(deploymentId, true);
         return "redirect:/workflow/process-list";
-    }
+    }*/
     
 }
