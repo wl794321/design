@@ -27,6 +27,10 @@
 			<groupId>commons-net</groupId>
 			<artifactId>commons-net</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+		</dependency>
 		<!-- Jackson Json处理工具包 -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
@@ -61,7 +65,7 @@
 			<artifactId>mybatis</artifactId>
 		</dependency>
 		<dependency>
-		<!-- activiti -->
+			<!-- activiti -->
 			<groupId>org.activiti</groupId>
 			<artifactId>activiti-engine</artifactId>
 		</dependency>
