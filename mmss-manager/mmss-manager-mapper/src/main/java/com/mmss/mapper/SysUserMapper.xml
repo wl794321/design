@@ -225,4 +225,7 @@
       locked = #{locked,jdbcType=CHAR}
     where id = #{id,jdbcType=VARCHAR}
   </update>
+  <select id="getByConditionPage" parameterType="com.mmss.pojo.SysUserQueryModel" resultType="com.mmss.pojo.SysUser">
+  	select * from sys_user
+  	</select>
 </mapper>

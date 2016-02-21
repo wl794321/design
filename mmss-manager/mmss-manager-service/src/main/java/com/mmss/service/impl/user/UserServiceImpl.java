@@ -13,6 +13,7 @@ import com.mmss.mapper.SysUserMapper;
 import com.mmss.pojo.SysPermission;
 import com.mmss.pojo.SysUser;
 import com.mmss.pojo.SysUserExample;
+import com.mmss.pojo.SysUserQueryModel;
 import com.mmss.service.user.UserService;
 
 @Service
@@ -47,6 +48,12 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public List<SysPermission> findPermissionListByUserId(String userid) throws Exception {
 		return sysPermissionMapperCustom.findPermissionListByUserId(userid);
+	}
+
+	@Override
+	public List<SysUser> getByConditionPage(SysUserQueryModel sysUserQueryModel) {
+		// TODO Auto-generated method stub
+		return sysUserMapper.getByConditionPage(sysUserQueryModel);
 	}
 
 }

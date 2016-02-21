@@ -1,6 +1,8 @@
 package com.mmss.pojo;
 
-public class SysUser {
+import com.mmss.vo.BaseModel;
+
+public class SysUser extends BaseModel{
     private String id;
 
     private String usercode;
@@ -60,4 +62,11 @@ public class SysUser {
     public void setLocked(String locked) {
         this.locked = locked == null ? null : locked.trim();
     }
+
+	@Override
+	public String toString() {
+		return "SysUser [id=" + id + ", usercode=" + usercode + ", username=" + username + ", password=" + password
+				+ ", salt=" + salt + ", locked=" + locked + "]";
+	}
+    
 }

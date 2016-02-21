@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.Param;
 
 import com.mmss.pojo.SysUser;
 import com.mmss.pojo.SysUserExample;
+import com.mmss.pojo.SysUserQueryModel;
 
 public interface SysUserMapper {
     int countByExample(SysUserExample example);
@@ -28,4 +29,6 @@ public interface SysUserMapper {
     int updateByPrimaryKeySelective(SysUser record);
 
     int updateByPrimaryKey(SysUser record);
+    
+    List<SysUser> getByConditionPage(SysUserQueryModel sysUserQueryModel);
 }
