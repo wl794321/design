@@ -4,7 +4,7 @@
 <head>
 	<%@ include file="common/global.jsp"%>
 	<link href="${ctx}/css/login.css" rel="stylesheet">
-	<title>登录系统</title>
+	<title>欢迎登录系统</title>
 	<script>
 	function randomcode_refresh(){
 		var img = document.getElementById("randomcode_img");

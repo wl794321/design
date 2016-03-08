@@ -31,4 +31,6 @@ public interface SysUserMapper {
     int updateByPrimaryKey(SysUser record);
     
     List<SysUser> getByConditionPage(SysUserQueryModel sysUserQueryModel);
+
+	SysUser findUserById(String userid);
 }

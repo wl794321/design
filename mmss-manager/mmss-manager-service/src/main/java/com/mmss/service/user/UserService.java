@@ -15,4 +15,6 @@ public interface UserService {
 	List<SysPermission> findPermissionListByUserId(String userid) throws Exception;
 
 	List<SysUser> getByConditionPage(SysUserQueryModel sysUserQueryModel);
+
+	SysUser findUserById(String userid);
 }

@@ -11,7 +11,7 @@ public class Page<E> implements java.io.Serializable{
 	private int totalCount;
 	private int start;
 	private int nowPage;
-	private List<E> result = Collections.emptyList();
+	private List<E> rows = Collections.emptyList();
 	
 	public int getStart() {
 		start = (getNowPage()-1)*getPageShow();
@@ -35,11 +35,11 @@ public class Page<E> implements java.io.Serializable{
 	public void setTotalCount(int totalCount) {
 		this.totalCount = totalCount;
 	}
-	public List<E> getResult() {
-		return result;
+	public List<E> getRows() {
+		return rows;
 	}
-	public void setResult(List<E> result) {
-		this.result = result;
+	public void setRows(List<E> rows) {
+		this.rows = rows;
 	}
 	public void setTotalPage(int totalPage) {
 		this.totalPage = totalPage;
@@ -61,7 +61,7 @@ public class Page<E> implements java.io.Serializable{
 	public String toString() {
 		return "Page [pageShow=" + pageShow + ", totalPage=" + getTotalPage()
 				+ ", totalCount=" + totalCount + ", nowPage=" + nowPage
-				+ ", result=" + result + "]";
+				+ ", rows=" + rows + "]";
 	}
 	
 	

@@ -228,4 +228,8 @@
   <select id="getByConditionPage" parameterType="com.mmss.pojo.SysUserQueryModel" resultType="com.mmss.pojo.SysUser">
   	select * from sys_user
   	</select>
+  <select id="findUserById" parameterType="java.lang.String" resultType="com.mmss.pojo.SysUser">
+  	select * from sys_user where id = #{userid,jdbcType=VARCHAR}
+  	</select>
+  	
 </mapper>

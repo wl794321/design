@@ -56,4 +56,10 @@ public class UserServiceImpl implements UserService {
 		return sysUserMapper.getByConditionPage(sysUserQueryModel);
 	}
 
+	@Override
+	public SysUser findUserById(String userid) {
+		// TODO Auto-generated method stub
+		return sysUserMapper.findUserById(userid);
+	}
+
 }

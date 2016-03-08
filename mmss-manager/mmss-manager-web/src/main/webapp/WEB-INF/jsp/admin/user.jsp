@@ -8,7 +8,7 @@
 	content="width=device-width, initial-scale=1 , user-scalable=no">
 <%@ include file="../common/global.jsp"%>
 <link href="${ctx}/css/index.css" rel="stylesheet">
-<link href="${ctx }/css/animate.css" rel="stylesheet">
+<link href="${ctx}/css/bootstrap.min.new.css" rel="stylesheet">
 <title>用户管理</title>
 </head>
 <body>
@@ -22,16 +22,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="index.html" class="navbar-brand">MMSS</a>
+            <a href="first.do" class="navbar-brand">MMSS</a>
         </div>
         <!--小屏幕导航按钮和logo-->
         <!--导航-->
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a href="first.do"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;后台首页</a></li>
-                <li class="active"><a href="user_list.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a></li>
-                <li><a href="content.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;内容管理</a></li>
-                <li><a href="tag.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;标签管理</a></li>
+                <li class="active"><a href="user_list.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;权限管理</a></li>
+                <li><a href="content.html"><span class="glyphicon glyphicon-tasks"></span>&nbsp;&nbsp;调度管理</a></li>
+                <li><a href="tag.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;物资管理</a></li>
+                <li><a href="tag.html"><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;车辆管理</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
@@ -47,7 +48,7 @@
                         <li><a href="index.html"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;我的收藏</a></li>
                     </ul>
                 </li>
-                <li><a href="#bbs"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a></li>
+                <li><a href="loginout.do"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;退出</a></li>
             </ul>
         </div>
         <!--导航-->

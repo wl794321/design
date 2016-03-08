@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+				#slider-sub {
+					width: 250px;
+					margin-top: 51px;
+					position: absolute;
+					z-index: 1;
+					height: 600px;
+				}
+				.mysearch {
+					margin: 10px 0;
+				}
+				.page-main {
+					position: absolute;
+					margin-left: 255px;
+					left: 0px;
+					top: 63px;
+					bottom: 0;
+					right: 0;
+					overflow: hidden;
+				}
+			}
