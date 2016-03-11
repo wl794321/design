@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beansProjectDescription>
+	<version>1</version>
+	<pluginVersion><![CDATA[3.7.2.201511260958-RELEASE]]></pluginVersion>
+	<configSuffixes>
+		<configSuffix><![CDATA[xml]]></configSuffix>
+	</configSuffixes>
+	<enableImports><![CDATA[false]]></enableImports>
+	<configs>
+		<config>src/main/resources/spring/applicationContext-base.xml</config>
+	</configs>
+	<autoconfigs>
+		<config>src/main/resources/spring/applicationContext-dao.xml</config>
+		<config>src/main/resources/spring/applicationContext-trans.xml</config>
+		<config>src/main/resources/spring/springmvc.xml</config>
+		<config>src/main/resources/spring/applicationContext-shiro.xml</config>
+		<config>src/main/resources/spring/applicationContext-activiti.xml</config>
+		<config>src/main/resources/spring/applicationContext-service.xml</config>
+	</autoconfigs>
+	<configSets>
+	</configSets>
+</beansProjectDescription>
