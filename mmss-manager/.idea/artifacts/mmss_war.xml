@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mmss:war">
+    <output-path>D:/mmss/target</output-path>
+    <root id="archive" name="gg.war">
+      <element id="artifact" artifact-name="mmss:war exploded" />
+    </root>
+  </artifact>
+</component>

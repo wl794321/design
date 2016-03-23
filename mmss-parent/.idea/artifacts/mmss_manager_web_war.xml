@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mmss-manager-web:war">
+    <output-path>$PROJECT_DIR$/../mmss-manager/mmss-manager-web/target</output-path>
+    <root id="archive" name="mmss-manager-web.war">
+      <element id="artifact" artifact-name="mmss-manager-web:war exploded" />
+    </root>
+  </artifact>
+</component>

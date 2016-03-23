@@ -32,7 +32,6 @@
 				<configuration>
 					<port>8080</port>
 					<path>/</path>
-					<tracking-mode>COOKIE</tracking-mode>
 				</configuration>
 			</plugin>
 		</plugins>

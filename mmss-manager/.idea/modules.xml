@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://D:/mmss/mmss.iml" filepath="D:/mmss/mmss.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mmss-manager.iml" filepath="$PROJECT_DIR$/mmss-manager.iml" group="mmss-manager and modules" />
+      <module fileurl="file://$PROJECT_DIR$/mmss-manager-mapper/mmss-manager-mapper.iml" filepath="$PROJECT_DIR$/mmss-manager-mapper/mmss-manager-mapper.iml" group="mmss-manager and modules" />
+      <module fileurl="file://$PROJECT_DIR$/mmss-manager-pojo/mmss-manager-pojo.iml" filepath="$PROJECT_DIR$/mmss-manager-pojo/mmss-manager-pojo.iml" group="mmss-manager and modules" />
+      <module fileurl="file://$PROJECT_DIR$/mmss-manager-service/mmss-manager-service.iml" filepath="$PROJECT_DIR$/mmss-manager-service/mmss-manager-service.iml" group="mmss-manager and modules" />
+      <module fileurl="file://$PROJECT_DIR$/mmss-manager-web/mmss-manager-web.iml" filepath="$PROJECT_DIR$/mmss-manager-web/mmss-manager-web.iml" group="mmss-manager and modules" />
+    </modules>
+  </component>
+</project>
